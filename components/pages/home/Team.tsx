@@ -12,18 +12,18 @@ import {
 const team = [
   {
     name: "Saad Raihan",
-    role: "Creative Director & CEO",
+    role: "COO & Creative Director",
     fallback: teamSaad.src,
+  },
+  {
+    name: "Maqibul Tamim",
+    role: "CEO & Product Designer",
+    fallback: teamTamim.src,
   },
   {
     name: "Joy Sarkar",
     role: "CTO & Full Stack Developer",
     fallback: teamJoy.src,
-  },
-  {
-    name: "Maqibul Tamim",
-    role: "Product Designer & Sales",
-    fallback: teamTamim.src,
   },
 ];
 

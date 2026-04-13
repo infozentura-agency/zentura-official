@@ -1,5 +1,5 @@
 import teamJoy from "@/assets/team/team-joy.jpg";
-import teamMahfuz from "@/assets/team/team-mahfuz.jpg";
+import teamRokibul from "@/assets/team/team-mahfuz.jpg";
 import teamRintu from "@/assets/team/team-rintu.jpg";
 import teamSaad from "@/assets/team/team-saad.webp";
 import teamTamim from "@/assets/team/team-tamim.jpg";
@@ -14,28 +14,28 @@ import {
 const team = [
   {
     name: "Saad Rayhan",
-    role: "Creative Director & CEO",
+    role: "COO & Creative Director",
     img: teamSaad,
   },
   {
     name: "Joy Sorkar",
-    role: "CTO & Backend Developer",
+    role: "CTO & Full Stack Developer",
     img: teamJoy,
   },
   {
     name: "Maqibul Hossain Tamim",
-    role: "Product Designer & Sales Manager",
+    role: "CEO & Product Designer",
     img: teamTamim,
   },
   {
     name: "Ishrat Jahan Rintu",
-    role: "Full Stack Developer & Business Development",
+    role: "CFO & Full Stack Developer ",
     img: teamRintu,
   },
   {
     name: "Rakibul Islam",
-    role: "Full-Stack Developer & Sales Representative",
-    img: teamMahfuz,
+    role: "CIO & Full Stack Developer",
+    img: teamRokibul,
   },
 ];
 
