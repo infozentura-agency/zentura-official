@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zentura.studio"),
+  metadataBase: new URL("https://zentura.agency"),
   title: {
     default: "Zentura — The Product Studio for High-Stakes Decisions",
     template: "%s | Zentura",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zentura.studio",
+    url: "https://zentura.agency",
     siteName: "Zentura",
     title: "Zentura — The Product Studio for High-Stakes Decisions",
     description:
