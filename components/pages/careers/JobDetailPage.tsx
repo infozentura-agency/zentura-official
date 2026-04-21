@@ -242,14 +242,14 @@ export default function JobDetailPage({ slug }: { slug: string }) {
             <p className='text-[14px] text-muted-foreground mb-6'>
               Send your portfolio and a brief introduction to{" "}
               <a
-                href='mailto:hello@zentura.agency'
+                href={`mailto:${process.env.EMAIL_USER}`}
                 className='text-foreground hover:underline'>
-                hello@zentura.agency
+                {process.env.EMAIL_USER}
               </a>
             </p>
             <MagneticButton className='inline-flex'>
               <a
-                href='mailto:hello@zentura.agency'
+                href={`mailto:${process.env.EMAIL_USER}`}
                 className='text-[12px] font-semibold uppercase tracking-wider bg-foreground text-primary-foreground px-6 py-3 rounded-full hover:bg-foreground/90 transition-colors inline-flex'>
                 Apply for this role →
               </a>

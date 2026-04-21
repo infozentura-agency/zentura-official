@@ -32,7 +32,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...spring.gentle, delay: 0.35 }}>
               {[
-                { label: "Email", value: "hello@zentura.agency" },
+                { label: "Email", value: `${process.env.EMAIL_USER}` },
                 { label: "Based in", value: "Dhaka, Bangladesh" },
                 { label: "Available for", value: "Projects worldwide" },
               ].map((item) => (

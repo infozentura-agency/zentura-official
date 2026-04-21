@@ -100,7 +100,6 @@
   }
   html {
     @apply font-sans;
-    scroll-behavior: smooth;
   }
   ::selection {
     background: oklch(0.145 0 0 / 0.12);
