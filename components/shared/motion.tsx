@@ -18,15 +18,15 @@ export const spring = {
 interface MotionWrapperProps extends HTMLMotionProps<"div"> {
   children: ReactNode;
   tag?:
-    | "div"
-    | "section"
-    | "article"
-    | "h1"
-    | "h2"
-    | "h3"
-    | "h4"
-    | "p"
-    | "span";
+  | "div"
+  | "section"
+  | "article"
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "p"
+  | "span";
 }
 
 /**
@@ -132,7 +132,7 @@ export const StaggerItem = ({
   children,
   className,
 }: {
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
 }) => (
   <motion.div className={className} variants={staggerItem}>
