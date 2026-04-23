@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: zentura-official
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2134:2134"
+    environment:
+      NODE_ENV: production
+      PORT: 2134
+      HOSTNAME: 0.0.0.0
+    restart: unless-stopped
