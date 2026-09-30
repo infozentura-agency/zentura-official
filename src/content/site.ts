@@ -146,7 +146,7 @@ const allTeam: TeamMember[] = [
     name: "Makibul Hossain Tamim", 
     role: "Co-founder & CEO", 
     focus: "Company direction and partnerships", 
-    image: { src: "/team1.jpg", alt: "Portrait of Makibul Hossain Tamim", width: 1200, height: 1500 },
+    image: { src: "/team1-tamim.jpg", alt: "Portrait of Makibul Hossain Tamim", width: 1200, height: 1500 },
     base: "Dhaka, Bangladesh",
     skills: [
       "Product strategy & studio leadership",
