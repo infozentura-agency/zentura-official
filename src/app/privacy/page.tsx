@@ -1,0 +1,5 @@
+import { HeroStatement, ProseBlock, Section } from "@/components/zentura/blocks";
+
+export default function Page() {
+  return <><HeroStatement label="LEGAL / PRIVACY" title="Privacy, in plain terms.">This notice explains what information reaches Zentura through this website and how it is used.</HeroStatement><Section><ProseBlock title="Information you provide"><p>When you email us, we receive the details you choose to share, including your name, email address, company, and product message.</p></ProseBlock></Section><Section><ProseBlock title="How it is used"><p>We use that information to understand and respond to your enquiry, maintain necessary business records, and protect the website from misuse. We do not sell personal information.</p></ProseBlock></Section><Section><ProseBlock title="Retention and contact"><p>Enquiry information is kept only while it remains relevant to the conversation or our legal and operational obligations. To ask about your information, write to <a href="mailto:official@zentura.agency">official@zentura.agency</a>.</p><p><strong>Last updated</strong><br />September 2026</p></ProseBlock></Section></>;
+}
