@@ -126,12 +126,104 @@ export const articles: Article[] = [
 
 // Full roster. Ishrat is hidden from public pages for now — flip
 // TEAM_HIDDEN_SLUGS to an empty array to restore her.
+export type TeamMember = {
+  slug: string;
+  name: string;
+  role: string;
+  focus: string;
+  image: { src: string; alt: string; width: number; height: number };
+  base?: string;
+  skills?: string[];
+  about?: string[];
+  current?: { company: string; role: string };
+  responsibility?: string;
+};
+
 const TEAM_HIDDEN_SLUGS = ["ishrat-jahan-rintu"] as const;
-const allTeam = [
-  { slug: "makibul-hossain-tamim", name: "Makibul Hossain Tamim", role: "CEO", focus: "Company direction and partnerships", image: { src: "/team1.jpg", alt: "Portrait of Makibul Hossain Tamim", width: 1200, height: 1500 } },
-  { slug: "saad-rayhan", name: "Saad Rayhan", role: "COO", focus: "Product design and operations", image: { src: "/team2.webp", alt: "Portrait of Saad Rayhan", width: 1200, height: 1500 } },
-  { slug: "joy-sarkar", name: "Joy Sarkar", role: "CTO", focus: "Engineering direction and delivery", image: { src: "/team3.webp", alt: "Portrait of Joy Sarkar", width: 1200, height: 1500 } },
-  { slug: "ishrat-jahan-rintu", name: "Ishrat Jahan Rintu", role: "CFO · Full-stack developer", focus: "Finance and full-stack delivery", image: { src: "/team4.webp", alt: "Portrait of Ishrat Jahan Rintu", width: 1200, height: 1500 } },
+const allTeam: TeamMember[] = [
+  { 
+    slug: "makibul-hossain-tamim", 
+    name: "Makibul Hossain Tamim", 
+    role: "Co-founder & CEO", 
+    focus: "Company direction and partnerships", 
+    image: { src: "/team1.jpg", alt: "Portrait of Makibul Hossain Tamim", width: 1200, height: 1500 },
+    base: "Dhaka, Bangladesh",
+    skills: [
+      "Product strategy & studio leadership",
+      "Client partnerships & communication",
+      "UI/UX design & product engineering",
+      "Team collaboration & delivery"
+    ],
+    about: [
+      "Makibul Hossain Tamim is the Co-founder and CEO of Zentura, a product studio based in Dhaka, Bangladesh. He leads the studio’s direction and client partnerships, bringing product strategy, design, and engineering together to help businesses turn ideas into practical digital products.",
+      "With a background in Computer Science and Engineering and hands-on experience in Product design, Systems Engineering, and Usabilty Testing. Tamim connects business goals with user needs and technical decisions. He works closely with clients and the team to clarify requirements, shape product priorities, and guide delivery from concept through release.",
+      "His approach centres on clear communication, shared responsibility, and continuous improvement. At Zentura, he helps build lasting partnerships through thoughtful work, attention to client feedback, and a consistent commitment to product quality."
+    ],
+    current: { company: "Zentura", role: "Co-founder & CEO" },
+    responsibility: "Leading studio strategy, client partnerships, and product direction. Aligning business goals with design and engineering while supporting the team throughout delivery."
+  },
+  { 
+    slug: "saad-rayhan", 
+    name: "Saad Rayhan", 
+    role: "Co-founder & Chief Operating Officer (COO)", 
+    focus: "Product design and operations", 
+    image: { src: "/team2.webp", alt: "Portrait of Saad Rayhan", width: 1200, height: 1500 },
+    base: "Dhaka, Bangladesh",
+    skills: [
+      "Studio operations & delivery coordination",
+      "Product design & creative direction",
+      "Business development & client engagement",
+      "Team collaboration & process improvement"
+    ],
+    about: [
+      "Saad Rayhan is the Co-founder and Chief Operating Officer of Zentura, overseeing studio operations and contributing to product design and creative direction. He connects the studio’s priorities with day-to-day delivery, helping the team move projects forward with clear responsibilities and coordinated workflows.",
+      "His work brings together client engagement, business development, and collaboration across design and engineering. He works closely with clients and the team to clarify expectations, organise priorities, and keep product decisions aligned with business goals and user needs.",
+      "At Zentura, Saad focuses on strengthening how the studio works as it grows. Through clear communication, practical processes, and attention to delivery, he supports a collaborative environment where the team can produce thoughtful, consistent work."
+    ],
+    current: { company: "Zentura", role: "Co-founder & COO" },
+    responsibility: "Leading studio operations, coordinating project delivery, and supporting business development and client engagement. Contributing to product design and creative direction while improving team workflows and internal processes."
+  },
+  { 
+    slug: "joy-sarkar", 
+    name: "Joy Kumar Sarkar", 
+    role: "Co-founder & CTO", 
+    focus: "Engineering direction and delivery", 
+    image: { src: "/team3.webp", alt: "Portrait of Joy Kumar Sarkar", width: 1200, height: 1500 },
+    base: "Manikganj, Bangladesh",
+    skills: [
+      "Technical strategy & engineering leadership",
+      "Software engineering & system architecture",
+      "API design & database engineering",
+      "Application security & performance"
+    ],
+    about: [
+      "Joy Kumar Sarkar is the Co-founder and CTO of Zentura, leading the studio’s technical direction and engineering delivery. He connects product requirements with practical technical decisions, helping the team build reliable, maintainable software.",
+      "At Zentura, he works closely with the design and product teams to translate complex requirements into working systems. His approach emphasises clear architecture, code quality, secure access, and thoughtful technology choices that support both immediate delivery and future growth."
+    ],
+    current: { company: "Zentura", role: "Co-founder & CTO" },
+    responsibility: "Leading technical strategy, system architecture, and engineering delivery. Guiding technology decisions and development standards while overseeing application security, performance, and maintainability."
+  },
+  { 
+    slug: "ishrat-jahan-rintu", 
+    name: "Mst. Ishrat Jahan Rintu", 
+    role: "Chief Financial Officer (CFO) & Software Engineer", 
+    focus: "Finance and software engineering", 
+    image: { src: "/team4.webp", alt: "Portrait of Mst. Ishrat Jahan Rintu", width: 1200, height: 1500 },
+    base: "Dhaka, Bangladesh",
+    skills: [
+      "Financial planning & studio finance",
+      "Software engineering",
+      "API development & database architecture",
+      "AI integration & intelligent applications"
+    ],
+    about: [
+      "Mst. Ishrat Jahan Rintu is the Chief Financial Officer and a Software Engineer at Zentura. She combines responsibility for the studio’s finances with hands-on involvement in product engineering, contributing to both business operations and technical delivery.",
+      "A Computer Science and Engineering graduate from BRAC University. Her work spans frontend and backend development, database architecture, REST APIs, payment integrations, and AI-powered features.",
+      "At Zentura, she supports financial planning, expense oversight, and financial coordination across client engagements. Alongside these responsibilities, she collaborates with the engineering team to build and maintain applications. Her dual role brings a practical understanding of development work to the studio’s financial decisions."
+    ],
+    current: { company: "Zentura", role: "CFO & Software Engineer" },
+    responsibility: "Overseeing studio finances, financial planning, and expense tracking while contributing to software engineering. Supporting informed business decisions and working with the engineering team on application delivery."
+  },
 ] as const;
 export const team = allTeam.filter((member) => !(TEAM_HIDDEN_SLUGS as readonly string[]).includes(member.slug));
 export const studioImages = {

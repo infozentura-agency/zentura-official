@@ -90,7 +90,7 @@
   body { min-width: 320px; background: var(--bg); color: var(--ink); font-size: 14px; line-height: 18px; }
   strong, b { font-weight: 400; }
   ::selection { background: var(--ink); color: var(--ink-inverse); }
-  a, button { -webkit-tap-highlight-color: transparent; }
+  a, button { -webkit-tap-highlight-color: transparent; cursor: pointer; }
   :focus-visible { scroll-margin: 80px; }
 }
 
